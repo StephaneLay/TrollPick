@@ -20,28 +20,38 @@ let sup = ["Alistar","Bard","Blitzcrank","Brand","Braum","Janna","Karma","Leona"
 let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","FiddleSticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
 "Kayn","Kha'zix","Kindred","Lee Sin","Lilia","Maitre Yi","Nidalee","Nocturne","Nunu","Rammus","Rek'sai","Rengar","Shyvana",
 "Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac"];
+
+const card_container = document.getElementById("cardcontainer");
     
 function Randomize(_role){
-
     switch (_role){
         case _top:
-            
+            DisplayRole(top);
+            break;
+        case _mid:
+            DisplayRole(mid);
+            break;
+        case _sup:
+            DisplayRole(sup);
+            break;
+        case _bot:
+            DisplayRole(bot);
+            break;
+        case _jungle:
+            DisplayRole(jungle);
+            break;
     }
-
 }
    
-   
-        
-    }
 
 function DisplayRole(arr){
     for (let i = 0; i < 3; i++) {
-        coucou = Math.floor(Math.random()*arr.length);
-        console.log(arr[coucou]);
+        let champ = arr[Math.floor(Math.random()*arr.length)];
+        card_container.innerHTML = `<img src="assets/${champ}.JPG" >`;
 }
 
 
     window.Randomize = Randomize;
 
-
+}
 })
