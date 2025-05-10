@@ -23,10 +23,14 @@ let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","FiddleSticks"
 "Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac"];
 
 let temp_arr = [];
+limit = 5
 
 const card_container = document.getElementById("cardcontainer");
 const button_container = document.getElementById("buttoncontainer");
 const addcard_container = document.getElementById("addcardcontainer");
+const reset_container = document.getElementById("reset");
+
+
 
     
 
@@ -58,14 +62,18 @@ function DisplayRole(arr){
     button_container.innerHTML = "";
     for (let i = 0; i < 3; i++) {
         PickChamp();
+        
 }
     addcard_container.innerHTML += '<button id="addbutton" onclick="AddPick()"> + </button>';
+    reset_container.innerHTML += `<button id="resetbutton" onclick="Reset()">Reset</button>`;
+
 }
 
 function AddPick(){
-    if (temp_arr.length>0) {
+    if (limit>=2) {
         PickChamp();
     }else{
+        PickChamp();
         addcard_container.innerHTML = "";
     }
     
@@ -76,17 +84,20 @@ function PickChamp(){
         let champ = temp_arr[index];
         card_container.innerHTML += `<img src="assets/${champ}.JPG">`;
         temp_arr.splice(index,1);
+        limit --;
 }
 
 function Reset(){
-    button_container.innerHTML = `<button onclick="Randomize('_top')">Top</button>
-        <button onclick="Randomize('_jungle')">Jungle</button>
-        <button onclick="Randomize('_mid')">Mid</button>
-        <button onclick="Randomize('_bot')">Bot</button>
-        <button onclick="Randomize('_sup')">Support</button>`;
+    button_container.innerHTML = `<button class="rolebutton" onclick="Randomize('_top')">Top</button>
+        <button class="rolebutton" onclick="Randomize('_jungle')">Jungle</button>
+        <button class="rolebutton" onclick="Randomize('_mid')">Mid</button>
+        <button class="rolebutton" onclick="Randomize('_bot')">Bot</button>
+        <button class="rolebutton" onclick="Randomize('_sup')">Support</button>`;
     
     card_container.innerHTML = "";
-    addcard_container.innerHTML = ""
+    addcard_container.innerHTML = "";
+    reset_container.innerHTML = "";
+    limit = 5;
 }
 
 

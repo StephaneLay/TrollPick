@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <title>TrollPick</title>
 </head>
 
 <body>
     <div id="title">
         <h1>Stf's TrollPick App</h1>
-    <p>A decent champion selector for each role</p>
+        <p>Please select a role to random picks. If one of the pick is picked or banned , then add a new one with the plus button</p>
     </div>
-    
+
 
     <div id="buttoncontainer">
-        <button onclick="Randomize('_top')">Top</button>
-        <button onclick="Randomize('_jungle')">Jungle</button>
-        <button onclick="Randomize('_mid')">Mid</button>
-        <button onclick="Randomize('_bot')">Bot</button>
-        <button onclick="Randomize('_sup')">Support</button>
+        <button class="rolebutton" onclick="Randomize('_top')">Top</button>
+        <button class="rolebutton" onclick="Randomize('_jungle')">Jungle</button>
+        <button class="rolebutton" onclick="Randomize('_mid')">Mid</button>
+        <button class="rolebutton" onclick="Randomize('_bot')">Bot</button>
+        <button class="rolebutton" onclick="Randomize('_sup')">Support</button>
     </div>
 
 
@@ -28,11 +33,11 @@
 
     <main>
         <div id="cardcontainer">
-    </div>
-    <div id="addcardcontainer"></div>
+        </div>
+        <div id="addcardcontainer"></div>
     </main>
-    
-    <button onclick="Reset()">Reset</button>
+
+    <div id="reset"></div>
 
     <script src="script.js"></script>
 
