@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
 
 
-let top = ["Aatrox","Ambessa","Camille","Cho'Gath","Darius","Dr.Mundo","Fiora","Gangplank","Garen","Gnar","Gragas","Gwen",
+const top = ["Aatrox","Ambessa","Camille","Cho'Gath","Darius","Dr.Mundo","Fiora","Gangplank","Garen","Gnar","Gragas","Gwen",
 "Illaoi","Irelia","Jax","Jayce","K'Sante","Kayle","Kennen","Kled","Malphite","Maokai","Mordekaiser","Nasus","Olaf",
 "Ornn","Pantheon","Poppy","Quinn","Renekton","Riven","Rumble","Shen","Singed","Sion","Tahm Kench","Teemo","Trundle",
 "Tryndamere","Urgot","Volibear","Wukong","Yorick"];
@@ -32,8 +32,6 @@ const reset_container = document.getElementById("reset");
 
 
 
-    
-
 
 
 function Randomize(_role){
@@ -58,7 +56,9 @@ function Randomize(_role){
    
 
 function DisplayRole(arr){
-    temp_arr = arr;
+    console.log(arr);
+    temp_arr = arr.cloneNode(true);
+    
     button_container.innerHTML = "";
     for (let i = 0; i < 3; i++) {
         PickChamp();
