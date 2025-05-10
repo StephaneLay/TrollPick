@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>TrollPick</title>
 </head>
+
 <body>
-    <h1>Stf's TrollPick App</h1>
+    <div id="title">
+        <h1>Stf's TrollPick App</h1>
     <p>A decent champion selector for each role</p>
-
-    <button class="rolebutton" onclick="Randomize(_top)">Top</button>
-    <button class="rolebutton" onclick="Randomize(_jungle)">Jungle</button>
-    <button class="rolebutton" onclick="Randomize(_mid)">Mid</button>
-    <button class="rolebutton" onclick="Randomize(_bot)">Bot</button>
-    <button class="rolebutton" onclick="Randomize(_sup)">Support</button>
+    </div>
     
-    
-    <div id="cardcontainer">
 
+    <div id="buttoncontainer">
+        <button onclick="Randomize('_top')">Top</button>
+        <button onclick="Randomize('_jungle')">Jungle</button>
+        <button onclick="Randomize('_mid')">Mid</button>
+        <button onclick="Randomize('_bot')">Bot</button>
+        <button onclick="Randomize('_sup')">Support</button>
     </div>
 
-    <script src="script.js"></script>
+
+
+
+    <main>
+        <div id="cardcontainer">
+    </div>
+    <div id="addcardcontainer"></div>
+    </main>
     
+    <button onclick="Reset()">Reset</button>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
