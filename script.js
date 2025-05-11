@@ -57,7 +57,7 @@ function Randomize(_role){
 
 function DisplayRole(arr){
     console.log(arr);
-    temp_arr = arr.cloneNode(true);
+    temp_arr = arr.slice();
     
     button_container.innerHTML = "";
     for (let i = 0; i < 3; i++) {
