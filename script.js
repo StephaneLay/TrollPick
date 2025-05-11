@@ -18,7 +18,7 @@ let sup = ["Alistar","Bard","Blitzcrank","Brand","Braum","Janna","Karma","Leona"
 ,"Nautilus","Neeko","Pyke","Rakan","Rell","Renata","Sona","Soraka","Swain","Seraphine","Taric","Thresh","Vel'Koz","Yuumi",
 "Zilean","Zyra"];
 
-let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","FiddleSticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
+let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","Fiddlesticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
 "Kayn","Kha'zix","Kindred","Lee Sin","Lilia","Maitre Yi","Nidalee","Nocturne","Nunu","Rammus","Rek'sai","Rengar","Shyvana",
 "Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac"];
 
