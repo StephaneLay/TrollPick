@@ -15,7 +15,7 @@ let bot = ["Aphelios","Ashe","Caitlyn","Draven","Ezreal","Jhin","Jinx","Kai'sa",
 ,"Nilah","Samira","Sivir","Smolder","Tristana","Twitch","Varus","Vayne","Xayah","Zeri"];
 
 let sup = ["Alistar","Bard","Blitzcrank","Brand","Braum","Janna","Karma","Leona","Lulu","Lux","Milio","Morgana","Nami"
-,"Nautilus","Neeko","Pyke","Rakan","Rell","Renata","Sona","Soraka","Swain","Seraphine","Taric","Thresh","Vel'koz","Yuumi",
+,"Nautilus","Neeko","Pyke","Rakan","Rell","Renata","Sona","Soraka","Swain","Seraphine","Taric","Thresh","Vel'Koz","Yuumi",
 "Zilean","Zyra"];
 
 let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","FiddleSticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
