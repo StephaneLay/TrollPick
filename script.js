@@ -82,7 +82,7 @@ function AddPick(){
 function PickChamp(){
     let index = Math.floor(Math.random()*temp_arr.length);
         let champ = temp_arr[index];
-        card_container.innerHTML += `<img src="assets/${champ}.JPG">`;
+        card_container.innerHTML += `<img src="assets/${champ}.JPG" alt="${champ}">`;
         temp_arr.splice(index,1);
         limit --;
 }
