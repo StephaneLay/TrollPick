@@ -9,10 +9,10 @@ const top = ["Aatrox","Ambessa","Camille","Cho'Gath","Darius","Dr.Mundo","Fiora"
 let mid = ["Ahri","Akali","Akshan","Anivia","Annie","Aurelion","Aurora","Azir","Cassiopeia","Corki","Diana","Ekko","Fizz",
 "Galio","Heimerdinger","Hwei","Kassadin","Katarina","Leblanc","Lissandra","Lux","Malzahar","Mel","Naafiri","Neeko","Orianna","Qiyana",
 "Ryze","Sylas","Syndra","Taliyah","Talon","Twisted Fate","Veigar","Vel'Koz","Vex","Viktor","Vladimir","Xerath","Yasuo","Yone",
-"Zed","Ziggs","Zoe"];
+"Zed","Zoe"];
 
 let bot = ["Aphelios","Ashe","Caitlyn","Draven","Ezreal","Jhin","Jinx","Kai'sa","Kalista","Kog'maw","Lucian","Miss Fortune"
-,"Nilah","Samira","Sivir","Smolder","Tristana","Twitch","Varus","Vayne","Xayah","Zeri"];
+,"Nilah","Samira","Sivir","Smolder","Tristana","Twitch","Varus","Vayne","Xayah","Zeri","Ziggs"];
 
 let sup = ["Alistar","Bard","Blitzcrank","Brand","Braum","Janna","Karma","Leona","Lulu","Lux","Milio","Morgana","Nami"
 ,"Nautilus","Neeko","Pyke","Rakan","Rell","Renata","Sona","Soraka","Swain","Seraphine","Taric","Thresh","Vel'Koz","Yuumi",
