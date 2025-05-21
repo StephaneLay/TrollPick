@@ -81,7 +81,7 @@ function AddPick(){
 function PickChamp(role){
     let index = Math.floor(Math.random()*temp_arr.length);
         let champ = temp_arr[index];
-        card_container.innerHTML += `<a href="https://u.gg/lol/champions/${champ}/build/${role}"><img src="assets/${champ}.JPG" alt="${champ}"/></a>`;
+        card_container.innerHTML += `<a target="_blank" href="https://u.gg/lol/champions/${champ}/build/${role}"><img src="assets/${champ}.JPG" alt="${champ}"/></a>`;
         console.log(role);
         temp_arr.splice(index,1);
         limit --;
