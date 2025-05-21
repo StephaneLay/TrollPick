@@ -18,9 +18,9 @@ let sup = ["Alistar","Bard","Blitzcrank","Brand","Braum","Janna","Karma","Leona"
 ,"Nautilus","Neeko","Pyke","Rakan","Rell","Renata","Sona","Soraka","Swain","Seraphine","Taric","Thresh","Vel'Koz","Yuumi",
 "Zilean","Zyra"];
 
-let jungle = ["Amumu","Bel'Veth","Briar","Ekko","Elise","Evelynn","Fiddlesticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
+let jungle = ["Amumu","Ambessa","Bel'Veth","Briar","Ekko","Elise","Evelynn","Fiddlesticks","Graves","Hecarim","Ivern","Jarvan","Karthus",
 "Kayn","Kha'zix","Kindred","Lee Sin","Lilia","Maitre Yi","Nidalee","Nocturne","Nunu","Rammus","Rek'sai","Rengar","Shyvana",
-"Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac"];
+"Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac","Zed"];
 
 let temp_arr = [];
 limit = 5
