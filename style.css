@@ -36,7 +36,7 @@ main{
     align-items: center;
 }
 
-.cardcontainer{
+/* .cardcontainer{
     height : 30rem;
     width: 100%;
 }
@@ -46,7 +46,7 @@ a{
     width: 18rem;
     height: 27rem;
     z-index: -1;
-}
+} */
 
 img{
     width: 18rem;
