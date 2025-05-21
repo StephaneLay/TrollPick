@@ -37,26 +37,25 @@ const reset_container = document.getElementById("reset");
 function Randomize(_role){
     switch (_role){
         case '_top':
-            DisplayRole(top,top);
+            DisplayRole(top,"top");
             break;
         case '_mid':
-            DisplayRole(mid,mid);
+            DisplayRole(mid,"mid");
             break;
         case '_sup':
-            DisplayRole(sup,support);
+            DisplayRole(sup,"support");
             break;
         case '_bot':
-            DisplayRole(bot,adc);
+            DisplayRole(bot,"adc");
             break;
         case '_jungle':
-            DisplayRole(jungle,jungle);
+            DisplayRole(jungle,"jungle");
             break;
     }
 }
    
 
 function DisplayRole(arr,role){
-    console.log(arr);
     temp_arr = arr.slice();
     
     button_container.innerHTML = "";
@@ -82,7 +81,8 @@ function AddPick(){
 function PickChamp(role){
     let index = Math.floor(Math.random()*temp_arr.length);
         let champ = temp_arr[index];
-        card_container.innerHTML += `<a href="https://u.gg/lol/champions/${champ}/build/${role}"<img src="assets/${champ}.JPG" alt="${champ}">/a>`;
+        card_container.innerHTML += `<a href="https://u.gg/lol/champions/${champ}/build/${role}"><img src="assets/${champ}.JPG" alt="${champ}"/></a>`;
+        console.log(role);
         temp_arr.splice(index,1);
         limit --;
 }

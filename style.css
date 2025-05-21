@@ -36,12 +36,23 @@ main{
     align-items: center;
 }
 
+.cardcontainer{
+    height : 30rem;
+    width: 100%;
+}
 
+a{
+    display: block;
+    width: 18rem;
+    height: 27rem;
+    z-index: -1;
+}
 
 img{
     width: 18rem;
     height: 27rem;
     margin: .5em;
+    z-index: 2;
 }
 
 #addbutton{
