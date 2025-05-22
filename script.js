@@ -23,12 +23,14 @@ let jungle = ["Amumu","Ambessa","Bel'Veth","Briar","Ekko","Elise","Evelynn","Fid
 "Skarner","Talon","Udyr","Vi","Viego","Volibear","Warwick","Xin zhao","Zac","Zed"];
 
 let temp_arr = [];
-limit = 5
+let limit = 5;
+let lastPickedRole;
 
 const card_container = document.getElementById("cardcontainer");
 const button_container = document.getElementById("buttoncontainer");
 const addcard_container = document.getElementById("addcardcontainer");
 const reset_container = document.getElementById("reset");
+
 
 
 
@@ -57,10 +59,11 @@ function Randomize(_role){
 
 function DisplayRole(arr,role){
     temp_arr = arr.slice();
+    lastPickedRole=role;
     
     button_container.innerHTML = "";
     for (let i = 0; i < 3; i++) {
-        PickChamp(role);
+        PickChamp();
         
 }
     addcard_container.innerHTML += '<button id="addbutton" onclick="AddPick()"> + </button>';
@@ -78,11 +81,10 @@ function AddPick(){
     
 }
 
-function PickChamp(role){
+function PickChamp(){
     let index = Math.floor(Math.random()*temp_arr.length);
         let champ = temp_arr[index];
-        card_container.innerHTML += `<a target="_blank" href="https://u.gg/lol/champions/${champ}/build/${role}"><img src="assets/${champ}.JPG" alt="${champ}"/></a>`;
-        console.log(role);
+        card_container.innerHTML += `<a target="_blank" href="https://u.gg/lol/champions/${champ}/build/${lastPickedRole}"><img src="assets/${champ}.JPG" alt="${champ}"/></a>`;
         temp_arr.splice(index,1);
         limit --;
 }
